@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+      <a class="navbar-item">
+        Application
+      </a>
+      <a class="navbar-item">
+        Setup
+      </a>
+    </div>
+  </div>
+  <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary" href="https://thesis-c30c3.firebaseapp.com/register">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light" href="https://thesis-c30c3.firebaseapp.com/">
+            Log in
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+<section class="hero is-link">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Welkom!
+      </h1>
+      <h2 class="subtitle">
+        Login of registreer je voor het gebruik van de smart speaker.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="box">
+    <h1 class="title">
+      Achtergrond
+    </h1>
+    <p class="subtitle">
+      Upload hier uw achtergrond voor de smartspeaker!
+    </p>
+    <div class="field">
+      <div class="file has-name is-fullwidth">
+        <label class="file-label">
+          <form class="mt-4" action="/uploadphoto" method="POST" enctype="multipart/form-data">
+          <input class="file-input" type="file" name="myFile">
+          <span class="file-cta">
+      <span class="file-icon">
+        <i class="fas fa-upload"></i>
+      </span>
+      <span class="file-label">
+        Choose a file…
+      </span>
+    </span>
+          <span class="file-name">
+      Screen Shot 2017-07-29 at 15.54.25.png
+    </span>
+        </label>
+      </div>
+    </div>
+    <div class="field">
+      <p class="control">
+        <button class="button is-success" type="submit">
+          Upload
+        </button>
+      </form>
+      </p>
+    </div>
+  </div>
+    <div class="box">
+      <h1 class="title">
+        Locatie
+      </h1>
+      <p class="subtitle">
+        Geef de vaste locatie van de speaker in. (Nodig voor weer, tijd,etc.)
+      </p>
+      <form action="setPlaatsnaam" method="POST">
+      <div class="field">
+        <p class="control has-icons-left">
+    <span class="select is-multiple">
+      <select multiple size="8" name="stad">
+        <option selected value="Aalst">Aalst</option>
+        <option value="Aarschot">Aarschot</option>
+        <option value="Antwerpen">Antwerpen</option>
+        <option value="Beringen">Beringen</option>
+        <option value="Bilzen">Bilzen</option>
+        <option value="Blankenberge">Blankenberge</option>
+        <option value="Borgloon">Borgloon</option>
+        <option value="Bree">Bree</option>
+        <option value="Brugge">Brugge</option>
+        <option value="Damme">Damme</option>
+        <option value="Deinze">Deinze</option>
+        <option value="Dendermonde">Dendermonde</option>
+        <option value="Diest">Diest</option>
+        <option value="Diksmuide">Diksmuide</option>
+        <option value="Dilsen-Stokkem">Dilsen-Stokkem</option>
+        <option value="Eeklo">Eeklo</option>
+        <option value="Geel">Geel</option>
+        <option value="Genk">Genk</option>
+        <option value="Gent">Gent</option>
+        <option value="Geraardsbergen">Geraardsbergen</option>
+        <option value="Gistel">Gistel</option>
+        <option value="Halen">Halen</option>
+        <option value="Halle">Halle</option>
+        <option value="Hamont-Achel">Hamont-Achel</option>
+        <option value="Harelbeke">Harelbeke</option>
+        <option value="Hasselt">Hasselt</option>
+        <option value="Herentals">Herentals</option>
+        <option value="Herk-de-Stad">Herk-de-Stad</option>
+        <option value="Hoogstraten">Hoogstraten</option>
+        <option value="Ieper">Ieper</option>
+        <option value="Izegem">Izegem</option>
+        <option value="Kortrijk">Kortrijk</option>
+        <option value="Landen">Landen</option>
+        <option value="Leuven">Leuven</option>
+        <option value="Lier">Lier</option>
+        <option value="Lo-Reninge">Lo-Reninge</option>
+        <option value="Lokeren">Lokeren</option>
+        <option value="Lommel">Lommel</option>
+        <option value="Maaseik">Maaseik</option>
+        <option value="Mechelen">Mechelen</option>
+        <option value="Menen">Menen</option>
+        <option value="Mesen">Mesen</option>
+        <option value="Mortsel">Mortsel</option>
+        <option value="Nieuwpoort">Nieuwpoort</option>
+        <option value="Ninove">Ninove</option>
+        <option value="Oostende">Oostende</option>
+        <option value="Oudenaarde">Oudenaarde</option>
+        <option value="Oudenburg">Oudenburg</option>
+        <option value="Peer">Peer</option>
+        <option value="Poperinge">Poperinge</option>
+        <option value="Roeselare">Roeselare</option>
+        <option value="Ronse">Ronse</option>
+        <option value="Scherpenheuvel">Scherpenheuvel-Zichem</option>
+        <option value="Sint-Niklaas">Sint-Niklaas</option>
+        <option value="Sint-Truiden">Sint-Truiden</option>
+        <option value="Tielt">Tielt</option>
+        <option value="Tienen">Tienen</option>
+        <option value="Tongeren">Tongeren</option>
+        <option value="Torhout">Torhout</option>
+        <option value="Turnhout">Turnhout</option>
+        <option value="Veurne">Veurne</option>
+        <option value="Vilvoorde">Vilvoorde</option>
+        <option value="Waregem">Waregem</option>
+        <option value="Wervik">Wervik</option>
+        <option value="Zottegem">Zottegem</option>
+        <option value="Zoutleeuw">Zoutleeuw</option>
+      </select>
+    </span>
+          <span class="icon is-small is-left">
+      <i class="fas fa-globe"></i>
+    </span>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button class="button is-success" type="submit">
+            Opslagen
+          </button>
+        </p>
+      </form>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1 class="title">
+        Externe Accounts (API's)
+      </h1>
+      <p class="subtitle">
+        Voeg hier externe accounts toe aan uw smartspeaker.
+      </p>
+      <div class="box">
+        <!---
+        <div class="columns">
+          <div class="column">
+            <figure class="image">
+              <img src="/calendar.jpg" style="height: 5rem; width: auto"/>
+            </figure>
+          </div>
+          <div class="column">
+            <%-table%>
+          </div>
+          <div class="column">
+
+          </div>
+          <div class="column">
+            <div style="height: 5rem;
+                        position: relative;">
+              <button class="button is-link"  style="margin: 0;
+                                              position: absolute;
+                                              top: 50%;
+                                              -ms-transform: translateY(-50%);
+                                              transform: translateY(-50%);">
+                Log-in
+              </button>
+            </div>
+          </div>
+        --->
+            <%-table%>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Boilerplate -->
+<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+</script>
+
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
